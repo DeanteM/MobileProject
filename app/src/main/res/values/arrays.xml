@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="rating_scales">
+        <item>1-100</item>
+        <item>1-10</item>
+        <item>A-Z</item>
+    </string-array>
+</resources>

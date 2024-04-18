@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCE4EC"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create List"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Input field for list name -->
+    <EditText
+        android:id="@+id/editTextListName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitle"
+        android:hint="List Name"
+        android:background="#FFFFFF"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Dropdown for rating scale -->
+    <Spinner
+        android:id="@+id/spinnerRatingScale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextListName"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        android:entries="@array/rating_scales"/>
+
+    <!-- Input field for description -->
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerRatingScale"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        android:hint="Description" />
+
+    <!-- Checkbox for privacy -->
+    <CheckBox
+        android:id="@+id/checkBoxPrivate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Private"
+        android:layout_below="@id/editTextDescription"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Button to add a photo -->
+    <Button
+        android:id="@+id/buttonAddPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Photo"
+        android:layout_below="@id/checkBoxPrivate"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Button to create the list -->
+    <Button
+        android:id="@+id/buttonCreateList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create List"
+        android:layout_below="@id/buttonAddPhoto"
+        android:layout_marginTop="32dp"
+        android:background="#FF4081"/>
+
+</RelativeLayout>
